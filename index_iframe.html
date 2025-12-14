@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="sourse/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="sourse/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="sourse/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="sourse/files/favicon_io/site.webmanifest">
+
+
+    <link rel="stylesheet" href="sourse/styles/style.css">
+    <link rel="stylesheet" href="sourse/styles/blok.css">
+    <link rel="stylesheet" href="sourse/styles/castom.css">
+    <title>DereCube</title>
+    <style>
+
+* {
+    background-color: white;
+}
+
+        #playerFrame {
+            position: fixed;
+            bottom: 0; right: 0;
+            width: 100%;
+            height: 12%; /* Высота плеера */
+            border: none;
+            z-index: 1000;
+        }
+        #mainFrame {
+            width: 100%;
+            height: 88%; /* Занимаем всё, кроме плеера */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Основной контент сайта -->
+    <iframe id="mainFrame" src="content_main.html" title="Основной контент"></iframe>
+    
+    <!-- 2. Плеер, который всегда с вами -->
+    <iframe id="playerFrame" src="player.html" title="Аудиоплеер"></iframe>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
