@@ -55,6 +55,11 @@ bottom: 0;
 right: 0;
 }
 
+.heid1 {
+    height: 100%;
+    width: 100%;
+}
+
 
 /*.bor {
         border-left: 1px;
